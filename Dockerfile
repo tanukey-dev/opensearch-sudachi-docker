@@ -1,6 +1,8 @@
 FROM opensearchproject/opensearch:2.17.1
 
+ARG OPENSEARCH_HOME=/usr/share/opensearch
 USER root
+WORKDIR $OPENSEARCH_HOME
 RUN yum install -y unzip wget
 
 # プラグインをファイルからインストールする
