@@ -1,6 +1,6 @@
 FROM opensearchproject/opensearch:2.17.1
 
-RUN apt-get install unzip wget
+RUN dnf install unzip wget
 
 # プラグインをファイルからインストールする
 RUN wget https://github.com/WorksApplications/elasticsearch-sudachi/releases/download/v3.2.3/opensearch-2.17.1-analysis-sudachi-3.2.3.zip
